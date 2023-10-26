@@ -87,3 +87,15 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# Large bioinformatics files
+*.fastq.gz
+*.fastq
+*.csv
+*.xlsx
+*.tsv
+*.bed
+*.bam
+*.sam
+*.sf
+
