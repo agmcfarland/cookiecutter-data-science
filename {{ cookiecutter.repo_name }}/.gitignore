@@ -98,4 +98,19 @@ target/
 *.bam
 *.sam
 *.sf
+*.rds
+
+# Sublime
+sftp-config.json
+
+# Documents
+*.docx
+*.pptx
+
+# Images
+*.jpg
+*.png
+*.svg
+*.html
+*.pdf
 
