@@ -88,7 +88,7 @@ build_project_paths <- function(root_directory){
     'data_processed' = file.path(root_directory, 'data', 'processed'),
     'data_raw' = file.path(root_directory, 'data', 'raw'),
     'data_interim' = file.path(root_directory, 'data', 'interim'),
-    'data_external' = file.path(root_directory, 'data', 'interim'),
+    'data_external' = file.path(root_directory, 'data', 'external'),
     'references' = file.path(root_directory, 'references'),
     'src' = file.path(root_directory, 'src'),
     'reports' = file.path(root_directory, 'reports'),
