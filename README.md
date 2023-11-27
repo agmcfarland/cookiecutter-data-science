@@ -81,6 +81,8 @@ which is available now.
     │   ├── ProjectPaths   <- Project path management for python.
     │   │   └── ProjectPaths.py
     │
+    ├── tests              <- Tests for more formal src packages.
+    │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 
