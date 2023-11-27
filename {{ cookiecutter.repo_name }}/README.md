@@ -17,6 +17,8 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
+    ├── environment        <- Conda environment installation requirements.
+    │
     ├── exploratory        <- Exploratory analyses that may or may not be formalized into a notebook.
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
