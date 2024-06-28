@@ -1,27 +1,13 @@
-# Cookiecutter Data Science
+# Generic bionformatic project template
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+Based on cookiecutter
 
-
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
-
-
-### Requirements to use the cookiecutter template:
------------
- - Python 2.7 or 3.5+
- - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0: This can be installed with pip by or conda depending on how you manage your Python packages:
+### Install
 
 ``` bash
-$ pip install cookiecutter
+conda config --add channels conda-forge
+conda install cookiecutter
 ```
-
-or
-
-``` bash
-$ conda config --add channels conda-forge
-$ conda install cookiecutter
-```
-
 
 ### To start a new project, run:
 ------------
@@ -29,17 +15,7 @@ $ conda install cookiecutter
     cookiecutter https://github.com/agmcfarland/cookiecutter-data-science
 
 
-[![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
-
-### New version of Cookiecutter Data Science
-------------
-Cookiecutter data science is moving to v2 soon, which will entail using
-the command `ccds ...` rather than `cookiecutter ...`. The cookiecutter command
-will continue to work, and this version of the template will still be available.
-To use the legacy template, you will need to explicitly use `-c v1` to select it.
-Please update any scripts/automation you have to append the `-c v1` option (as above),
-which is available now.
-
+# Project directory structure
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -119,16 +95,9 @@ All Folders are subdivied by the notebook name.
 `lib/x0_first_analysis.py`
 
 
-## Contributing
 
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
-
-### Installing development requirements
+# Installing development requirements
 ------------
 
     pip install -r requirements.txt
 
-### Running the tests
-------------
-
-    py.test tests
