@@ -159,3 +159,7 @@ subchunkify <- function(g, fig_height = 7, fig_width = 5) {
   cat(knitr::knit(text = knitr::knit_expand(text = sub_chunk), quiet = TRUE))
 }
 
+
+markdown_header <- function(hashes = '##', text) {
+  cat("\n\n", hashes, " ", text, "\n\n", sep = "")
+}
