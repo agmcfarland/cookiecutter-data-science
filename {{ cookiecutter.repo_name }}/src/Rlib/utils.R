@@ -129,3 +129,30 @@ list_installed_R_packages <- function(list_namespace_only = FALSE) {
 }
 
 
+add_commas <- function(df) {
+  df <- df %>%
+    dplyr::mutate(
+      dplyr::across(
+        where(is.numeric),
+        ~ formatC(.x, format = "f", digits = 0, big.mark = ",")
+      )
+    ) 
+  return(df)
+}
+
+subchunkify <- function(g, fig_height=7, fig_width=5) {
+  g_deparsed <- paste0(deparse(
+    function() {g}
+  ), collapse = '')
+  
+  sub_chunk <- paste0("
+  `","``{r sub_chunk_", floor(runif(1) * 10000), ", fig.height=",
+  fig_height, ", fig.width=", fig_width, ", echo=FALSE, warning=FALSE, message=FALSE}",
+  "\n(", 
+  g_deparsed
+  , ")()",
+  "\n`","``
+  ")
+  
+  cat(knitr::knit(text = knitr::knit_expand(text = sub_chunk), quiet = TRUE))
+}
